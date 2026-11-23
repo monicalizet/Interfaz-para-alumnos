@@ -1,0 +1,55 @@
+Create database universidad; 
+Use universidad;
+
+create table carreras(
+clave int, 
+nomcarrera varchar(50)); 
+
+insert into carreras values(2112,'Ingenieria en Tecnologias de la Informacion');
+insert into carreras values(2113,'Ingenieria en Energias Renovables');
+insert into carreras values(2114,'Ingenieria en Tecnología Ambiental');
+
+
+
+CREATE TABLE profesores(
+    matricula VARCHAR(50) PRIMARY KEY,
+    nombre VARCHAR(50),
+    apellido_paterno VARCHAR(50),
+    apellido_materno VARCHAR(50),
+    curp VARCHAR(50),
+    formacion VARCHAR(60),
+    area VARCHAR(50),
+    carrera VARCHAR(50),
+    turno VARCHAR(50)
+); 
+
+CREATE TABLE estudiante (
+    matricula VARCHAR(50) PRIMARY KEY,
+    nombre VARCHAR(50),
+    apellido_paterno VARCHAR(50),
+    apellido_materno VARCHAR(50),
+    curp VARCHAR(50),
+    carrera VARCHAR(50),
+    turno VARCHAR(50),
+    semestre INT
+);
+
+CREATE TABLE contrasenaEst (
+    matricula VARCHAR(50) PRIMARY KEY,
+    contrasena VARCHAR(50)
+);
+
+
+CREATE TABLE contrasenaProf (
+    matricula VARCHAR(50) PRIMARY KEY,
+    contrasena VARCHAR(50)
+);
+    
+CREATE TABLE estudiante_profesor (
+    id_alumno VARCHAR(20),
+    id_maestro VARCHAR(20),
+    PRIMARY KEY (id_alumno, id_maestro),
+    FOREIGN KEY (id_alumno) REFERENCES estudiante(matricula),
+    FOREIGN KEY (id_maestro) REFERENCES profesores(matricula)
+);
+

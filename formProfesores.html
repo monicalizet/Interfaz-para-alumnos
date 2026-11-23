@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+     <head> 
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="shortcut icon" href="imagenes/logo1.png">
+      <link rel="stylesheet" type="text/css" href="formProfesores.css">
+         <title> Registro de docentes </title>
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+         <script src="formProfesores.js"></script>  
+      </head>
+     <body>
+          <form name="regProf" method="post">     
+
+            <div class="container">
+
+                <div class="row align-items-center">
+                    <div class="col">
+
+                        <img src="imagenes/logo2.png" height="60px" />
+                      
+                    </div>
+                    <div class="col-6">
+
+                    </div>
+                    <div class="col">
+                      
+                    </div>
+                </div>
+                
+                <div class="row align-items-center">
+                  <div class="col">
+                    
+                  </div>
+                  <div class="col-6">
+                    <h1>Registro de docentes</h1>
+                    <br>
+                  </div>
+                  <div class="col">
+                    
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+
+                        Nombre(s): <br>
+                        <input type="text"  id="nomEst" placeholder="Nombre"><br><br>
+                        Apellido paterno: <br>
+                        <input type="text"  id="apeEst1" placeholder="Apellido paterno"><br><br>
+                        Apellido materno: <br>
+                        <input type="text"  id="apeEst2" placeholder="Apellido materno"><br><br>
+                        CURP: <br>
+                        <input type="text"  id="curp" placeholder="CURP"><br><br>
+
+                    </div>
+                    <div class="col"> 
+
+                        Formacion Profesional: <br>
+                        <input type="text"  id="form" placeholder="Formacion profesional"><br><br>
+
+                        Area: <br>
+                        <select class="form-select" aria-label="Floating label select example" name="modelos" id="comboArea">
+                            <option selected>Seleccione su area</option>
+                            <option value="1">Informatica</option>
+                            <option value="2">Tecnologia ambiental</option>                           
+                        </select> <br>
+
+                        Carrera: <br>
+                        <select class="form-select" aria-label="Floating label select example" name="modelos" id="slt_carreras">
+                            <option selected>Seleccione su carrera</option>
+                            
+                        </select> <br>
+
+                        Turno: <br>
+                        <select class="form-select" aria-label="Floating label select example" name="modelos" id="comboTurno">
+                            <option selected>Elige turno</option>
+                            <option value="1">Matutino</option>
+                            <option value="2">Vespertino</option>
+                        </select> <br>
+                        
+                        <br>
+                    </div>
+                    <div class="col">
+
+                        Defina su contraseña: <br>
+                        <input type="text"  id="contrProf" placeholder="Contraseña"><br><br>
+
+                        <p id="message" class="message"></p>
+
+                    </div>
+                </div> 
+
+                <div class="row align-items-center">
+                    <div class="col">
+                    
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-success" id="enviar">Guardar registro</button>
+                        <button type="button" class="btn btn-outline-danger" id="limpiar">Limpiar cajas</button>
+                    </div>
+                    <div class="col">
+                      
+                    </div>
+
+                </div>
+                
+            </div>
+
+         </form>
+
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+ </html>

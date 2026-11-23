@@ -1,0 +1,10 @@
+
+    p {
+        font-size: 18px; /* Tamaño de fuente más grande */
+        line-height: 1.6; /* Espaciado entre líneas más amplio */
+        text-align: justify; /* Justificar el texto */
+        color: #333; /* Color de texto más suave */
+        padding: 20px; /* Espaciado interno */
+        background-color: #f8f9fa; /* Fondo claro para resaltar */
+        border-radius: 5px; /* Bordes redondeados */
+    }
